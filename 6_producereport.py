@@ -207,3 +207,9 @@ ProduceDictionary={
     }
 }
 
+for rec in ProduceDictionary:
+    total = float(ProduceDictionary[rec]['cost']) * float(ProduceDictionary[rec]['amt_sold'])
+    calc_total = round(total, 2)
+    if calc_total != float(ProduceDictionary[rec]['total']):
+        print(f"Product: {rec}")
+    

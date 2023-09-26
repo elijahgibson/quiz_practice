@@ -54,25 +54,25 @@ def create_deck():
 
 def deal_cards(deck, number):
     # Initialize an accumulator for the hand value.
-
+    hand_value = 0
     
     
     # DATA VALIDATION
     # Make sure the number of cards to deal is not
     # greater than the number of cards in the deck (52).
-
-    
+    if number > 52:
+        number = 52    
     
 
     # Deal the cards and accumulate their values.
+    import random
     
-
-
     
 
     # Display the value of the hand.
-
-    
+    for x in range(number):
+        card = random.choice(list(deck))
+            
     
 
 # Call the main function.

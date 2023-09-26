@@ -15,9 +15,6 @@ room-number,use,sq-ft,price
 
 '''
 
-
-
-
 datastore = { "medical":[
       { "room-number": 100,
         "use": "reception",
@@ -47,3 +44,12 @@ datastore = { "medical":[
 
       ]
 }
+
+print('room-number,use,sq-ft,price')
+for rec in datastore["medical"]:
+    room_number = rec['room-number']
+    use = rec['use']
+    sq_ft = rec['sq-ft']
+    price = rec['price']
+    print(f"{room_number},{use},{sq_ft},{price}")
+    
